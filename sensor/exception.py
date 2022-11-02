@@ -14,8 +14,10 @@ def error_message_detail(error, error_detail: sys):
 
 
 class SensorException(Exception):
-    def __init__(self, error_message, error_detail):
+    def __init__(self, error_message, error_detail:sys):
         """
+        This is custom exception class to get the error message with line
+        number.
         :param error_message: error message in string format
         """
         super().__init__(error_message)
