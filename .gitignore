@@ -131,3 +131,4 @@ dmypy.json
 
 #artifacts
 artifact
+saved_models
