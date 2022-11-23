@@ -10,6 +10,13 @@ import os,sys
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 class DataIngestion:
+    """
+        1) The data ingestion config is initialized in the init function.
+            schema  config is read which has the schema for every col.
+        2) The data(collection) from mongo database is exported to feature store.
+        3) Splitting of data in train/test split.
+        4) export_data_into_feature_store is the main function to process each step.
+    """
 
     def __init__(self,data_ingestion_config:DataIngestionConfig):
         try:
